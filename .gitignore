@@ -6,17 +6,15 @@
 crash.log
 crash.*.log
 
-# Terraform variable files
+# Terraform variables
 terraform.tfvars
 *.auto.tfvars
 
-# SSH keys
+# SSH private keys
 *.pem
 *.key
 id_rsa
-id_rsa.pub
 nt548-lab01-key
-nt548-lab01-key.pub
 
 # OS
 .DS_Store
