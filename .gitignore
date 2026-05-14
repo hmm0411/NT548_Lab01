@@ -1,0 +1,26 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Terraform variable files
+terraform.tfvars
+*.auto.tfvars
+
+# SSH keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+nt548-lab01-key
+nt548-lab01-key.pub
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
