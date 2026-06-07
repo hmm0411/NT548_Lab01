@@ -35,8 +35,17 @@ resource "aws_instance" "public_ec2" {
   associate_public_ip_address = true
   key_name                    = aws_key_pair.main.key_name
 
+  metadata_options {
+    http_tokens = "required"
+  }
+
+  root_block_device {
+    encrypted = true
+  }
+
   tags = {
     Name = "${var.project_name}-public-ec2"
+    Role = "Bastion"
   }
 }
 
@@ -48,7 +57,16 @@ resource "aws_instance" "private_ec2" {
   associate_public_ip_address = false
   key_name                    = aws_key_pair.main.key_name
 
+  metadata_options {
+    http_tokens = "required"
+  }
+
+  root_block_device {
+    encrypted = true
+  }
+
   tags = {
     Name = "${var.project_name}-private-ec2"
+    Role = "Private"
   }
 }
