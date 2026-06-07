@@ -9,6 +9,7 @@ crash.*.log
 # Terraform variables
 terraform.tfvars
 *.auto.tfvars
+*.tfvars
 
 # SSH private keys
 *.pem
