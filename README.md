@@ -2,7 +2,7 @@
 
 ## 1. Giới thiệu
 
-Repository này là bài thực hành 01 môn **Công nghệ DevOps và ứng dụng - NT548**.
+**Lab 01 - Công nghệ DevOps và ứng dụng - NT548**.
 
 Mục tiêu của bài lab là sử dụng **Terraform** và **AWS CloudFormation** để quản lý và triển khai tự động hạ tầng AWS theo mô hình public/private subnet.
 
